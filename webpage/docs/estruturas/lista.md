@@ -1,6 +1,6 @@
 ---
-title: Estrutura de Dados - Listas
-sidebar_position: 1
+title: Listas
+sidebar_position: 2
 slug: /listas
 ---
 
