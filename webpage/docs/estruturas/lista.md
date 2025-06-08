@@ -853,6 +853,9 @@ TAD ListaCircularSimples
 <iframe width="560" height="315" src="https://www.youtube.com/embed/XMUe3zFhM5c?si=g_D77IRs_9vkeP_i" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style={{ display: 'block', marginLeft: 'auto', maxHeight: '40vh', marginRight: 'auto', marginBottom: '24px' }}></iframe>
 <br />
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Mo4vesaut8g?si=EKlIgRZ_dSbaNKaR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style={{ display: 'block', marginLeft: 'auto', maxHeight: '40vh', marginRight: 'auto', marginBottom: '24px' }}></iframe>
+<br />
+
 :::
 
 ## 9. Lista de Exercícios
