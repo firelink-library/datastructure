@@ -110,4 +110,46 @@ TAD ChamadaEmergencia
 ```
 
 O que temos aqui:
-- Um conjunto de atributos primitivo. Aqui um ponto importante: em alguns casos é necessário 
+- Um conjunto de atributos primitivo. Aqui um ponto importante: os atributos primitivos são os elementos mais básicos e os elementos indivisíveis do projeto. 
+- Os métodos são a forma como as outras partes do programa vão interagir com nossa estrutura. Eles são uma forma de trazer uma camada de abstração para os elementos que vão trocar dados com nossos elementos.
+
+Legal, agora temos nosso elemento que representa nossa chamada de emergência! Mas agora precisamos trazer a implementação da fila deles. Aqui é importante destacar que essa implementação vai colocar um comportamento "em volta" da estrutura que acabamos de definir. Assim, nossa separação de responsabilidades ficou:
+
+- `ChamadaEmergencia:` representa uma ocorrência individual, com seus atributos e métodos.
+- `FilaPrioridadeChamadas:` gerencia várias ChamadaEmergencia, controlando a ordem de atendimento conforme a prioridade.
+
+Vamos analisar agora a implementação da `FilaPrioridadeChamadas`:
+
+```bash
+TAD FilaPrioridadeChamadas
+  ATRIBUTOS:
+    chamadas: lista de ChamadaEmergencia
+
+  MÉTODOS:
+    inserir(chamada)
+      adicionar chamada à lista chamadas
+      ordenar chamadas por prioridade (maior prioridade primeiro)
+
+    removerMaisUrgente()
+      se estáVazia()
+        RETORNAR nulo
+      mais_urgente ← chamadas[0]
+      remover chamadas[0] da lista
+      RETORNAR mais_urgente
+
+    consultarMaisUrgente()
+      se estáVazia()
+        RETORNAR nulo
+      RETORNAR chamadas[0]
+
+    estáVazia()
+      RETORNAR tamanho de chamadas == 0
+```
+
+Aqui, dos pontos mais relevantes para analisarmos:
+- `Abstração:` O usuário da FilaPrioridadeChamadas não precisa saber como as chamadas são armazenadas ou ordenadas internamente, apenas que pode inserir e obter a mais urgente.
+- `Flexibilidade:` Se no futuro quiser mudar a estrutura interna (por exemplo, de lista para heap), a interface pode permanecer igual.
+
+> "Legal Murilão, podemos seguir agora para as implementações com alguma ferramenta de código!"
+
+Vocês estão corretos, mas eu quero chamar a atenção para um ponto importante: os elementos da fila podem ser armazenados em um vetor ou em uma lista. Vamos verificar na sequencia como é o comportamento de uma lista.
