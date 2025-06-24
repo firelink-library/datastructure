@@ -326,6 +326,4 @@ Importante destacar aqui que essa pilha foi implementada para números inteiros.
    * Percorre `mid..end`, pop e compara.
 3. Demonstre com “radar”, “level”, “hello”.
 
----
 
-Cada exercício foca num cenário real que faz uso claro do comportamento **LIFO** da pilha. Se quiser pseudocódigo detalhado ou implementação em C/Python para algum, é só pedir!
